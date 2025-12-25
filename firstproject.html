@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <style>
+    body {
+        font-family: Arial;
+        background: white;
+        color: black;
+        margin: 0;
+        padding: 0;
+    }
+
+    header, nav, section {
+        padding: 20px;
+        margin: 10px;
+        border-radius: 8px;
+    }
+
+    header {
+        background: #007bff;
+        color: white;
+        text-align: center;
+    }
+
+    nav {
+        background: #ddd;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+    }
+
+    /* DARK MODE DESIGN */
+    .dark {
+        background: #0f172a;
+        color: white;
+    }
+
+    .dark header {
+        background: #111827;
+    }
+
+    .dark nav {
+        background: #1f2937;
+    }
+
+    .dark nav a {
+        color: white;
+    }
+
+    .theme-btn {
+        padding: 10px 15px;
+        background: black;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .dark .theme-btn {
+        background: white;
+        color: black;
+    }
+
+</style>
+  <body>
+
+<!-- Header -->
+<header>
+    <h1>Hassan Tech Solutions</h1>
+    <p>We Build Websites | Teach Tech | Inspire Innovation</p>
+
+    <button class="theme-btn" onclick="toggleTheme()">
+        Switch Theme
+    </button>
+</header>
+
+<!-- Navigation -->
+<nav>
+    <a href="#">Home</a> |
+    <a href="#">Services</a> |
+    <a href="#">Tech Blog</a> |
+    <a href="#">About</a> |
+    <a href="#">Contact</a>
+</nav>
+
+<!-- Hero / Business Section -->
+<section>
+    <h2>Grow Your Business With Technology</h2>
+    <p>We help businesses and individuals build professional online presence through modern web development.</p>
+    <p>Let’s take your brand to the next level 🚀</p>
+</section>
+
+<!-- Services -->
+<section>
+    <h2>Our Services</h2>
+
+    <h3>🌐 Website Development</h3>
+    <p>We design professional and responsive websites.</p>
+
+    <h3>📱 Tech Support</h3>
+    <p>We assist with digital tools, setup, and tech learning.</p>
+
+    <h3>🎓 Tech Training</h3>
+    <p>We teach coding, blogging, and digital skills.</p>
+</section>
+
+<!-- Tech Blog Section -->
+<section>
+    <h2>Tech Blog</h2>
+
+    <h3>📰 What is HTML and Why is it Important?</h3>
+    <p>HTML is the backbone of every website. It structures content on the internet...</p>
+    <a href="#">Read More</a>
+
+    <h3>💻 How to Start Coding as a Beginner</h3>
+    <p>Coding may look hard, but with the right guidance, anyone can learn...</p>
+    <a href="#">Read More</a>
+
+    <h3>📱 Top Tech Skills Needed in 2025</h3>
+    <p>Tech world is evolving. Here are the skills you must learn...</p>
+    <a href="#">Read More</a>
+</section>
+
+<!-- About -->
+<section>
+    <h2>About Us</h2>
+    <p>We are passionate about technology, business growth, and digital innovation.</p>
+    <p>Our mission is to help people learn tech and build powerful online presence.</p>
+</section>
+
+<!-- Contact -->
+<section>
+    <h2>Contact Us</h2>
+    <p>Email: hassan@example.com</p>
+    <p>Phone: 09012345678</p>
+
+    <form>
+        <input type="text" placeholder="Enter your name"><br><br>
+        <input type="email" placeholder="Enter your email"><br><br>
+        <textarea placeholder="Write your message"></textarea><br><br>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+    <script>
+function toggleTheme() {
+    document.body.classList.toggle("dark");
+}
+</script>
+
+</body>
+</body>
+</html>
